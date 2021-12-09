@@ -81,6 +81,12 @@ nav img{
     border: 1px solid #4336f4;
     background: #4336f4;
 }
+
+nav .fa {
+    display: none;
+}
+
+}
 @media(max-width: 700px)
 {
   .text-box h1{
@@ -108,4 +114,7 @@ nav img{
             margin: 10px;
             font-size: 22px;
             cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
     }
