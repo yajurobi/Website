@@ -1,0 +1,81 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-headerg">
+      <nav>
+          <a href="gallery.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+              <i class="fa fa-close" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+                  <li><a href="event.html">EVENTS</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+          <h1>Gallery</h1>
+</section>
+
+<section class="animals">
+        <h1>Some of our animals</h1>
+        <p>A gallery of our pet friends.</p>
+            <div class="row">
+                <div class="animals-col">
+                    <img src="images/johny.jpg">
+                    <div class="layer">
+                        <h3>Johny<br>8 yrs old<br>Pit Bull mix</h3>
+                    </div>
+                </div>
+                <div class="animals-col">
+                    <img src="images/max.png">
+                    <div class="layer">
+                        <h3>Max<br>4 yrs old<br>German sheapard</h3>
+                    </div>
+                </div>
+                <div class="animals-col">
+                    <img src="images/luna.jpg">
+                    <div class="layer">
+                        <h3>Luna<br>6 yrs old<br>Chihuahua</h3>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <section class="footer">
+            <h4>Socials</h4>
+            <p>Follow us on social where post about and adoption events.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+
+    </section>
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    </body>
+    </html>
