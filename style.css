@@ -87,11 +87,9 @@ nav .fa {
 }
 
 }
+
 @media(max-width: 700px)
 {
-  .text-box h1{
-        font-size: 20px;
-  }
    .nav-links ul li
     {
         display: block;
@@ -108,16 +106,21 @@ nav .fa {
         z-index: 2;
         transition: 0.5s;
     }
-    nav .fa{
-            display: block;
-            color: #fff;
-            margin: 10px;
-            font-size: 22px;
-            cursor: pointer;
-    }
     .nav-links ul{
         padding: 30px;
     }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+
 .hours{
     width: 80%;
     margin: auto;
@@ -127,4 +130,90 @@ nav .fa {
 h1{
     font-size: 36px;
     font-weight: 600;
+}
+.content-table {
+  border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #4336f4;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #4336f4;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #4336f4;
+}
+
+.info{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-col{
+    flex-basis: 31%;
+    background: #eff2fe;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.info-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2 );
+}
+
+@media (max-width:700px){
+    .row{
+        flex-direction: column;
+    }
 }

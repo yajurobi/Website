@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paw Shelter</title>
 <link rel="stylesheet" href="style.css">
@@ -14,7 +16,7 @@
       <nav>
             <a href="index.html"><img src="images/logo.png"></a>
             <div class="nav-links" id="navLinks">
-                 <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-close" onclick="hideMenu()"></i>
                  <ul>
                       <li><a href="index.html">HOME</a></li>
                       <li><a href="about.html">ABOUT US</a></li>
@@ -23,7 +25,7 @@
                       <li><a href="contact.html">CONTACT</a></li>
              </ul>
          </div>
-         <i class="fa fa-bars" onclick="hideMenu()"></i>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
       <div class="text-box">
                   <h1>Paw Shelter</h1>
@@ -33,29 +35,62 @@
       </section>
 
       <section class="hours">
-         <h1>Hours of Operation</h1>
-         <table class="content-table">
-           <thead>
-              <tr>
-                <th>Day</th>
-                <th>Hours</th>
-              </tr>
-            </thead>
-            <tbody>
-               <tr>
-         </table>
-         </section>
+              <h1>Hours of Operation</h1>
+      <table class="content-table">
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mon-Wed</td>
+                    <td>9AM-8PM</td>
+                 </tr>
+                 <tr class="active-row">
+                   <td>Thurs-Sat</td>
+                   <td>9AM-5PM</td>
+                </tr>
+                <tr>
+                 <td>Sun</td>
+                 <td>9AM-2PM</td>
+               </tr>
+  </tbody>
+</table>
+</section>
 
-<script>
+    <section class="info">
+        <h1>Info</h1>
+        <p>Some important information for you.</p>
+        <div class="row">
+            <div class="info-col">
+                <h3>Types of animals we have</h3>
+                <p>Here at Paw Shelter we have cats, dogs, rabbits and even racoons.</p>
+            </div>
+            <div class="info-col">
+                <h3>Prep</h3>
+                <p>Make sure to prepare your home in case you find a pet you love and can take them home that day.</p>
+            </div>
+            <div class="info-col">
+                <h3>Requirments</h3>
+                <p>In order to adopt one of our furry friends you will need a photo ID, an application, and a fee to be collected.</p>
+            </div>
+        </div>
+    </section>
 
-    var navLinks = document.getbyElementById("navLinks")
-    function showMenu() {
-        navLinks.style.right = "0";
-      }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-</script>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+     function showMenu() {
+       navLinks.style.right = "0";
+}
+
+       function hideMenu() {
+        navLinks.style.right = "-200px";
+}
+    </script>
 
 </body>
 </html>
