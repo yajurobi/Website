@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="sub-headerp">
+      <nav>
+          <a href="gallery.html"><img src="images/logo.png"></a>
+          <div class="nav-links" id="navLinks">
+              <i class="fa fa-close" onclick="hideMenu()"></i>
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+                  <li><a href="event.html">EVENTS</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Events</h1>
+  </section>
+
+<section class="list">
+  <h1>Event List</h1>
+  <p> This is a list of Upcoming pet related events. That we and other shelters will be attending. Click the link Sign Up button above to receive reminders and information about these events.</p>
+  <div class="box">
+    <h2>List Of Upcoming Events</h2>
+    <ul>
+      <li><span>1</span>Lifsaving Care for Pets</li>
+      <li><span>2</span>Innovatin Showdown</li>
+      <li><span>3</span>Pet Food Pantry</li>
+      <li><span>4</span>Paint your Pet</li>
+      <li><span>5</span>National Adoption Week</li>
+      <li><span>6</span>Pet Photos With Santa</li>
+
+    </ul>
+  </div>
+</section>
+
+<section class="pop">
+  <div class="center">
+  <button id="show-login">Sign Up</button>
+</div>
+<div class="popup">
+  <div class="close-btn">&times;</div>
+  <div class="form">
+    <h2>Log in</h2>
+    <div class="form-element">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-element">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password">
+    </div>
+    <div class="form-element">
+      <input type="checkbox" id="remember-me">
+      <label for="remember-me">Remember me</label>
+    </div>
+    <div class="form-element">
+      <button>Sign up</button>
+    </div>
+    <div class="form-element">
+      <a href="#">Forgot password?</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="footer">
+        <h4>Sponsors</h4>
+        <p>Link to our sponsors <a href="https://www.weirsicecream.com/">Weir's Ice Cream</a>
+        <h5>Social Media</h5>
+        <p>Follow us on social where post about our animals and adoption events.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+
+        </div>
+</<section>
+
+
+
+
+  <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+          navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+          navLinks.style.right = "-200px";
+      }
+
+      document.querySelector("#show-login").addEventListener("click",function(){
+        document.querySelector(".popup").classList.add("active");
+      });
+      document.querySelector(".popup .close-btn").addEventListener("click",function(){
+        document.querySelector(".popup").classList.remove("active");
+      });
+
+  </script>
+
+  </body>
+  </html>
